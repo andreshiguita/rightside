@@ -10,9 +10,14 @@
       <!-- icono de regresar (vacio) -->
       <ion-nav-back-button></ion-nav-back-button>
 
-      <!-- Icono de acción de navegación -->
+      <!-- Icono de acción de navegación izquiera -->
       <ion-nav-buttons side="left">
         <button class="button button-icon button-clear ion-gear-b" menu-toggle="left"></button>
+      </ion-nav-buttons>
+
+      <!-- Icono de acción de navegación derecha -->
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-levels" menu-toggle="right"></button>
       </ion-nav-buttons>
     </ion-nav-bar>
 
@@ -27,6 +32,8 @@
     <ion-header-bar class="bar-positive">
       <h1 class="title">Left</h1>
     </ion-header-bar>
+
+    <!-- Contenido del side menu -->
     <ion-content>
       <ion-list>
         <ion-item nav-clear menu-close ng-click="login()">
@@ -44,4 +51,32 @@
       </ion-list>
     </ion-content>
   </ion-side-menu>
+
+  <!-- inicia contenido del side menú de la derecha -->
+  <ion-side-menu side="right">
+
+    <!-- Cabecera del side menú -->
+    <ion-header-bar class="bar-positive">
+      <h1 class="title">Right</h1>
+    </ion-header-bar>
+
+    <!-- Contenido del side menu -->
+    <ion-content>
+      <ion-list>
+        <ion-item nav-clear menu-close ng-click="login()">
+          Login
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/search">
+          Search
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/browse">
+          Browse
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/playlists">
+          Playlists
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
 </ion-side-menus>
