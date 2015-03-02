@@ -62,20 +62,9 @@
 
     <!-- Contenido del side menu -->
     <ion-content>
-      <ion-list>
-        <ion-item nav-clear menu-close ng-click="login()">
-          Login
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/search">
-          Search
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/browse">
-          Browse
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/playlists">
-          Playlists
-        </ion-item>
-      </ion-list>
+      <!-- Agregada directiva  -->
+      <ion-cart ng-controller='CartController'></ion-cart>
+      
     </ion-content>
   </ion-side-menu>
 
