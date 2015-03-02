@@ -47,6 +47,10 @@ angular.module('starter.controllers', [])
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 })
 
+.controller("CartController", function($scope) {
+  
+})
+
 .directive("ionCart", function() {
   return {
     restrict : "E",
