@@ -45,4 +45,11 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+})
+
+.directive("ionCart", function() {
+  return {
+    restrict : "E",
+    templateUrl : "templates/ionCart.html"
+  }
 });
